@@ -3,10 +3,10 @@ import { Expense } from './expense';
 export const ADD_EXPENSE = 'ADD_EXPENSE';
 export const EDIT_EXPENSE = 'EDIT_EXPENSE';
 export const REMOVE_EXPENSE = 'REMOVE_EXPENSE';
-export const SET_EXPENSE = 'SET_EXPENSE';
+export const SET_EXPENSES = 'SET_EXPENSES';
 
-export interface SetExpenseAction {
-  type: typeof SET_EXPENSE;
+export interface SetExpensesAction {
+  type: typeof SET_EXPENSES;
   expenses: Expense[];
 }
 
@@ -26,7 +26,7 @@ export interface AddExpenseAction {
 }
 
 export type ExpenseActionTypes =
-  | SetExpenseAction
+  | SetExpensesAction
   | EditExpenseAction
   | RemoveExpenseAction
   | AddExpenseAction;
